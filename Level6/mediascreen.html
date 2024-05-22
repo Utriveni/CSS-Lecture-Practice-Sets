@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Screen Documentation</title>
+    <style>
+        .box{
+            padding: 5px;
+            height: 200px;
+            width: 200px;
+            background-color: mediumvioletred;
+        }
+        @media screen  and (min-width: 300px){
+            #box1{
+            
+            background-color: green;
+            margin: 10px;
+            padding: 10px;
+        }
+            
+        } 
+        @media screen  and (max-width: 500px){
+            #box2{
+            
+            background-color: blue;
+            margin: 10px;
+            padding: 10px;
+        }
+            
+        } 
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box</div>
+    <div id="box2" class="box">Box</div>
+</body>
+</html>

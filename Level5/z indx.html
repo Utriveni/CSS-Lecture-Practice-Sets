@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z Index Documentation</title>
+    <style>
+        *{
+            margin: 50px;
+            padding: 10px;
+        }
+        .box{
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            border-color: green;
+            text-align: center;
+            font-size: 20px;
+        }
+        #first{
+            background-color: blueviolet;
+            left: 70px;
+            top: 130px;
+            z-index: 1;
+        }
+        #second{
+            background-color: red;
+            left: 110px;
+            top: 160px;
+            z-index: 2;
+            
+        }
+        #third{
+            background-color: gold;
+            left: 150px;
+            top: 190px;
+            z-index: 3;
+        }
+        #forth{
+            background-color: magenta;
+            left: 190px;
+            top: 220px;
+            z-index: 4;
+        }
+       
+        #fifth{
+            background-color: blueviolet;
+            left: 220px;
+            top: 260px;
+            z-index: 5;
+        }
+        #sixth{
+            background-color: red;
+            left: 250px;
+            top: 290px;
+            z-index: 6;
+            
+        }
+        #seventh{
+            background-color: gold;
+            left: 280px;
+            top: 330px;
+            z-index: 7;
+        }
+        #eighth{
+            background-color: magenta;
+            left: 310px;
+            top: 370px;
+            z-index: 8;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div id="first" class="box">Z-Index1</div>
+    <div id="second" class="box">Z-Index2</div>
+    <div id="third" class="box">Z-Index3</div>
+    <div id="forth" class="box">Z-Index4</div>
+    <div id="fifth" class="box">Z-Index5</div>
+    <div id="sixth" class="box">Z-Index6</div>
+    <div id="seventh" class="box">Z-Index7</div>
+    <div id="eighth" class="box">Z-Index8</div>
+</body>
+</html>

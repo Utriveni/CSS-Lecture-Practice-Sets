@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Property Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #heading{
+            text-align: center;
+            color: blue;
+        }
+        .box{
+            height: 100px;
+            width: 00px;
+            border: 2px solid blue;
+            margin: 5px;
+            text-align: center;
+            flex-grow: 1;
+        }
+        #container{
+            height: 200px;
+            width: 500px;
+            background-color: aliceblue;
+            border: 3px solid black;
+            display: flex;
+            flex-direction:row;
+            justify-content:center;
+            flex: wrap 0;
+            align-items: center;
+            align-content: center;
+        }
+        #box1{ background-color: blueviolet; align-self: flex-start;}
+        #box2{ background-color: red; align-self:flex-end}
+        #box3{ background-color: green;align-self: flex-start;}
+        
+        #box4{ background-color: yellow; align-self: flex-end;}
+        #box5{ background-color: magenta; align-self: flex-start;}
+        #box6{ background-color: brown;align-self: flex-end;}
+    </style>
+</head>
+<body>
+    <h1 id="heading">Flexbox Container</h1>
+    <div id="container">
+        <div id="box1" class="box">Flexbox1</div>
+        <div id="box2" class="box">Flexbox2</div>
+        <div id="box3" class="box">Flexbox3</div>
+        <div id="box4" class="box">Flexbox4</div>
+        <div id="box5" class="box">Flexbox5</div>
+        <div id="box6" class="box">Flexbox6</div>
+    
+    </div>
+</body>
+</html>
